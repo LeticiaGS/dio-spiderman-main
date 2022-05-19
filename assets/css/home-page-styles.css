@@ -143,6 +143,7 @@ body::before {
   filter: drop-shadow(30px 10px 4px rgba(0, 0, 0, 0.5));
 }
 
+/*no js add hovered num id q atribui ao body conforme passa o mouse em cima*/
 body#spider-man-01-hovered::before {
   background-image: url(/assets/images/pic-sm-bg-01.jpg);
 }
@@ -154,10 +155,12 @@ body#spider-man-03-hovered::before {
   background-image: url(/assets/images/pic-sm-bg-03.jpg);
 }
 
+/*tira o vermelho pra ficar so a img de fundo*/
 body[id^='spider-man-']::before {
   opacity: 1;
 }
 
+/*pega os elemts q tem id spider-man- no seu card torna gray menos o hovered*/
 body[id^='spider-man-'] .s-card:not(.s-card--hovered) {
   filter: grayscale(100%);
 }
